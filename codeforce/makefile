@@ -7,7 +7,7 @@ COBJS:=$(SRCR:.cpp=.o)
 all:$(BIN)
 
 $(COBJS): %.o:%.cpp
-	g++ -c $< -o $@ $(CFGALGS)
+	g++ -c $< -o $@
 
 $(BIN):$(COBJS)
 	g++ -o $(BIN) $(COBJS)
